@@ -8,7 +8,7 @@ import Back from "../UI/Assets/back.png"
 import Dots from "../UI/Assets/dots.png"
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
-const ConfigDoor = ({ setCart, isEdit }) => {
+const ConfigDoor = ({ setCart}) => {
     const [progress, setProgress] = useState(0);
     const [layout, setLayout] = useState([]);
     const [window, setWindow] = useState([]);
@@ -40,7 +40,7 @@ const ConfigDoor = ({ setCart, isEdit }) => {
                 <h3 className='text-md font-semibold text-gray-1000'><span className='text-md font-extrabold text-gray-1000 mr-2'>{`${progress}%`}</span>Completed</h3>
             </div>
             {/* LAYOUT BOX */}
-            <LayoutOpt isEdit={isEdit} setLayout={setLayout} progress={progress} setProgress={setProgress} />
+            <LayoutOpt setLayout={setLayout} progress={progress} setProgress={setProgress} />
 
             {/* WINDOW BOX */}
             <WindowOpt setWindow={setWindow} progress={progress} setProgress={setProgress} />

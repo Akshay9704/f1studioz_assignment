@@ -10,7 +10,6 @@ import CartPage from "./pages/cartpage";
 function App() {
   const [cart, setCart] = useState({door:[], layout: [], window: [], track: [], other: [] });
   const [products, setProducts] = useState([]);
-  const [isEdit, setIsEdit] = useState(false);
   return (
     <Router>
       <Header />
@@ -18,8 +17,8 @@ function App() {
         <Route exact path="/" element={<Main products={products}/>} />
         <Route path="/newOrder" element={<NewOrder />} />
         <Route path="/newDoor" element={<NewDoor setCart={setCart} />} />
-        <Route path="/configDoor" element={<ConfigDoor isEdit={isEdit} setCart={setCart} />} />
-        <Route path="/cart" element={<CartPage cart={cart} setIsEdit={setIsEdit} setProducts={setProducts}/>} />
+        <Route path="/configDoor" element={<ConfigDoor setCart={setCart} />} />
+        <Route path="/cart" element={<CartPage cart={cart} setProducts={setProducts}/>} />
       </Routes>
     </Router>
   );
