@@ -8,7 +8,7 @@ import Edit from "../Assets/edit.png"
 import Delete from "../Assets/delete.png"
 import Copy from "../Assets/copy.png"
 
-const CartDetails = ({ cart, setIsEdit, setProducts }) => {
+const CartDetails = ({ cart, setProducts }) => {
     const [count, setCount] = useState(1);
 
     const countChange = (e) => {
@@ -32,11 +32,6 @@ const CartDetails = ({ cart, setIsEdit, setProducts }) => {
 
     const updateProducts = () => {
         setProducts([productName]);
-    };
-
-    const handleEditClick = () => {
-        setIsEdit(true);
-        navigate('/configDoor');
     };
 
     const navigate = useNavigate();
@@ -93,7 +88,7 @@ const CartDetails = ({ cart, setIsEdit, setProducts }) => {
                             <img src={Favorite} alt="Favorite" />
                             <h3 className='text-xs md:text-lg lg:text-lg uppercase text-brown-1000 font-semibold'>Favorites</h3>
                         </button>
-                        <button onClick={handleEditClick} className='border-2 py-2 px-2 md:w-60 lg:w-60 flex gap-1 items-center justify-center'>
+                        <button onClick={() => navigate('/configDoor')} className='border-2 py-2 px-2 md:w-60 lg:w-60 flex gap-1 items-center justify-center'>
                             <img src={Edit} alt="Edit" />
                             <h3 className='text-xs md:text-lg lg:text-lg uppercase text-brown-1000'>Edit</h3>
                         </button>
