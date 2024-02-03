@@ -56,7 +56,7 @@ const CartDetails = ({ cart, setIsEdit, setProducts }) => {
                 </div>
             </div>
             <div className='flex justify-center mt-3'>
-                <div style={{ height: "auto" }} className="mt-2 pb-4 rounded-lg w-11/12 md:w-4/5 lg:w-4/5 border-2 bg-white">
+                <div className="h-auto mt-2 pb-4 rounded-lg w-11/12 md:w-3/5 lg:w-3/5 border-2 bg-white">
                     <div className='md:w-3/4 lg:w-3/4 py-2 px-4'>
                         <h3 className='text-gray-1000 font-bold text-md md:text-lg lg:text-lg'>{productName}</h3>
                         <p className='text-gray-500 text-sm'>Job Name: Front door with glass <span className='ml-1 text-red-1000 font-bold'>Change</span></p>
@@ -89,35 +89,35 @@ const CartDetails = ({ cart, setIsEdit, setProducts }) => {
                         </div>
                     </div>
                     <div className='flex justify-center mt-2'>
-                        <button className='border-2 py-2 px-2 md:w-60 lg:w-60 flex gap-2 items-center justify-center'>
+                        <button className='border-2 py-2 px-2 md:w-60 lg:w-60 flex gap-1 items-center justify-center'>
                             <img src={Favorite} alt="Favorite" />
-                            <h3 className='uppercase text-brown-1000 font-semibold'>Favorites</h3>
+                            <h3 className='text-xs md:text-lg lg:text-lg uppercase text-brown-1000 font-semibold'>Favorites</h3>
                         </button>
-                        <button onClick={handleEditClick} className='border-2 py-2 px-2 md:w-60 lg:w-60 flex gap-2 items-center justify-center'>
+                        <button onClick={handleEditClick} className='border-2 py-2 px-2 md:w-60 lg:w-60 flex gap-1 items-center justify-center'>
                             <img src={Edit} alt="Edit" />
-                            <h3 className='uppercase text-brown-1000'>Edit</h3>
+                            <h3 className='text-xs md:text-lg lg:text-lg uppercase text-brown-1000'>Edit</h3>
                         </button>
-                        <button className='border-2 py-2 px-2 md:w-60 lg:w-60 flex gap-2 items-center justify-center'>
+                        <button className='border-2 py-2 px-2 md:w-60 lg:w-60 flex gap-1 items-center justify-center'>
                             <img src={Copy} alt="Copy" />
-                            <h3 className='uppercase text-brown-1000'>Copy</h3>
+                            <h3 className='text-xs md:text-lg lg:text-lg uppercase text-brown-1000'>Copy</h3>
                         </button>
-                        <button onClick={() => navigate('/')} className='border-2 py-2 px-2 md:w-60 lg:w-60 flex gap-2 items-center justify-center'>
+                        <button onClick={() => navigate('/')} className='border-2 py-2 px-2 md:w-60 lg:w-60 flex gap-1 items-center justify-center'>
                             <img src={Delete} alt="Delete" />
-                            <h3 className='uppercase text-brown-1000'>Delete</h3>
+                            <h3 className='text-xs md:text-lg lg:text-lg uppercase text-brown-1000'>Delete</h3>
                         </button>
                     </div>
                 </div>
             </div>
             <div className='flex flex-col md:flex-row lg:flex-row gap-3 items-center justify-center mt-2'>
                 <div className='float-left'>
-                    <div style={{ height: "auto", width: "500px" }} className="mx-12 mt-2 pb-4 py-2 px-4 rounded-lg border-2 bg-white">
+                    <div  className="h-auto w-80 md:w-96 lg:w-96 md:mx-12 lg:mx-12 mt-2 pb-4 py-2 px-4 rounded-lg border-2 bg-white">
                         <form className='mt-3'>
                             <h3 className='text-gray-1000'>Change Delivery Date</h3>
                             <input className='w-full rounded-md border-2 my-2 p-2' placeholder='Example: 31-DEC-1999' type="date" id="date" name="date" />
                             <h3 className='text-gray-1000'>Standard Delivery: Tue May 28 - 2019</h3>
                         </form>
                     </div>
-                    <div style={{ height: "auto", width: "500px" }} className=" mx-12 mt-2 pb-4 py-2 px-4 rounded-lg border-2 bg-white">
+                    <div className="h-auto w-80 md:w-96 lg:w-96 md:mx-12 lg:mx-12 mt-2 pb-4 py-2 px-4 rounded-lg border-2 bg-white">
                         <form className='mt-3'>
                             <h3 className='text-gray-1000'>Purchase Order Number</h3>
                             <input className='w-full rounded-md border-2 my-2 p-2' placeholder='Enter PO Number' type="number" id="date" name="date" />
@@ -126,7 +126,7 @@ const CartDetails = ({ cart, setIsEdit, setProducts }) => {
                     </div>
                 </div>
                 <div className='float-right'>
-                    <div style={{ height: "auto", width: "500px" }} className="mx-12 mt-2 pb-4 py-2 px-4 rounded-lg border-2 bg-white">
+                    <div className="h-auto w-80 md:w-96 lg:w-96 md:mx-12 lg:mx-12 mt-2 pb-4 py-2 px-4 rounded-lg border-2 bg-white">
                         <h3 className='text-gray-1000 font-semibold mt-2'>Bill Summary</h3>
                         <div className='flex justify-between mt-3'>
                             <p>Subtotal</p>
@@ -162,12 +162,12 @@ const CartDetails = ({ cart, setIsEdit, setProducts }) => {
                 </div>
             </div>
             <div className='flex flex-col md:flex-row lg:flex-row items-center md:items-baseline lg:items-baseline justify-center mt-2'>
-                <div style={{ height: "auto" }} className="mt-2 pb-4 py-3 px-4 rounded-lg w-11/12 md:w-8/12 lg:8/12 border-2 bg-white">
+                <div className="h-auto mt-2 pb-4 py-3 px-4 rounded-lg w-11/12 md:w-8/12 lg:8/12 border-2 bg-white">
                     <div className='flex flex-col md:flex-row lg:flex-row md:justify-between lg:justify-between items-center lg:items-center'>
                         <div>
                             <h3 className='text-gray-1000 font-semibold mt-2'>Bill Summary</h3>
                             <div className='flex gap-5 mt-2'>
-                                <div className='w-72'>
+                                <div className='md:w-72 lg:w-72'>
                                     <h3 className='text-brown-1000 font-bold'>Bement Jared</h3>
                                     <p>144 Curt Shores, 50, Madison Avenue Hixson - 42040</p>
                                     <p>Contact: (123) 4567890</p>
@@ -181,7 +181,7 @@ const CartDetails = ({ cart, setIsEdit, setProducts }) => {
                         <div>
                             <h3 className='text-gray-1000 font-semibold mt-2'>Shipping To</h3>
                             <div className='flex gap-5 mt-2'>
-                                <div className='w-72'>
+                                <div className='md:w-72 lg:w-72'>
                                     <h3 className='text-brown-1000 font-bold'>Bement Jared</h3>
                                     <p>144 Curt Shores, 50, Madison Avenue Hixson - 42040</p>
                                     <p>Contact: (123) 4567890</p>
@@ -202,11 +202,11 @@ const CartDetails = ({ cart, setIsEdit, setProducts }) => {
                         <h3 className='text-brown-1000 text-xl font-bold mt-1'>$5061.11</h3>
                     </div>
                     <div className='flex gap-2'>
-                        <button onClick={() => navigate('/newOrder')} className='text-red-1000 font-semibold text-sm uppercase border-red-1000 rounded-lg border-2 px-4 py-2'>Add More</button>
+                        <button onClick={() => navigate('/newOrder')} className='text-red-1000 font-semibold text-sm uppercase border-red-1000 rounded-lg border-2 px-2 md:px-4 md:py-2 lg:px-4 lg:py-2'>Add More</button>
                         <button onClick={() => {
                             navigate('/');
                             updateProducts();
-                        }} className='text-white font-semibold text-sm uppercase bg-red-1000 rounded-lg border-2 px-4 py-2'>Place Order</button>
+                        }} className='text-white font-semibold text-sm uppercase bg-red-1000 rounded-lg border-2 px-2 md:px-4 md:py-2 lg:px-4 lg:py-2'>Place Order</button>
                     </div>
                 </div>
             </div>

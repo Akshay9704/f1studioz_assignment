@@ -36,7 +36,7 @@ const ConfigDoor = ({ setCart}) => {
                 </div>
             </div>
             <div className='flex gap-2 flex-col items-center mt-3'>
-                <ProgressBar variant='success' style={{ height: "8px", width: "400px" }} now={progress} />
+                <ProgressBar variant='success' className='h-2 md:w-96 lg:w-96 w-60' now={progress} />
                 <h3 className='text-md font-semibold text-gray-1000'><span className='text-md font-extrabold text-gray-1000 mr-2'>{`${progress}%`}</span>Completed</h3>
             </div>
             {/* LAYOUT BOX */}

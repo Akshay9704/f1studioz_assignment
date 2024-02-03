@@ -66,28 +66,28 @@ const LayoutOpt = ({ setLayout, progress, setProgress }) => {
                     </div>
                     <div className='flex flex-col gap-2 items-center'>
                         {/* WIDTH */}
-                        <div className='flex gap-12 md:gap-20 lg:gap-20 items-center'>
+                        <div className='flex gap-8 md:gap-20 lg:gap-20 items-center'>
                             <Form.Label className='text-gray-1000'>Width</Form.Label>
-                            <div className='flex gap-3'>
-                                <Form.Select id="w_feet" onChange={handleOption} className='w-36 cursor-pointer' aria-label="Default select example">
+                            <div className='flex gap-2'>
+                                <Form.Select id="w_feet" onChange={handleOption} className='md:w-36 lg:w-36 cursor-pointer' aria-label="Default select example">
                                     <option>Select</option>
                                     <option>8 ft.</option>
                                 </Form.Select>
-                                <Form.Select id="w_inch" onChange={handleOption} className='w-36 cursor-pointer' aria-label="Default select example">
+                                <Form.Select id="w_inch" onChange={handleOption} className='md:w-36 lg:w-36 cursor-pointer' aria-label="Default select example">
                                     <option>Select</option>
                                     <option>2 in.</option>
                                 </Form.Select>
                             </div>
                         </div>
                         {/* HEIGHT */}
-                        <div className='flex gap-12 md:gap-20 lg:gap-20 items-center'>
+                        <div className='flex gap-8 md:gap-20 lg:gap-20 items-center'>
                             <Form.Label className='text-gray-1000'>Height</Form.Label>
-                            <div className='flex gap-3'>
-                                <Form.Select id="h_feet" onChange={handleOption} className='w-36 cursor-pointer' aria-label="Default select example">
+                            <div className='flex gap-2'>
+                                <Form.Select id="h_feet" onChange={handleOption} className='md:w-36 lg:w-36 cursor-pointer' aria-label="Default select example">
                                     <option>Select</option>
                                     <option> 8 ft.</option>
                                 </Form.Select>
-                                <Form.Select id="h_inch" onChange={handleOption} className='w-36 cursor-pointer' aria-label="Default select example">
+                                <Form.Select id="h_inch" onChange={handleOption} className='md:w-36 lg:w-36 cursor-pointer' aria-label="Default select example">
                                     <option>Select</option>
                                     <option>2 in.</option>
                                 </Form.Select>

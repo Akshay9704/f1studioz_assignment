@@ -30,14 +30,14 @@ const Main = ({ products }) => {
                     favorites
                 </h1>
             </div>
-            <div className='flex justify-between items-center px-5 py-3 bg-slate-200'>
+            <div className='flex justify-between items-center px-4 md:px-5 lg:px-5 py-3 bg-slate-200'>
                 <div className='hidden md:flex lg:flex gap-4'>
                     <h1 onClick={handleActive} className={`cursor-pointer text-lg font-bold ${active ? 'text-gray-1000 underline decoration-4 decoration-gray-1000 underline-offset-27' : 'text-blue-1000'}`}>Active Carts</h1>
                     <h1 onClick={handleArchived} className={`cursor-pointer text-lg font-bold ${archived ? 'text-gray-1000 underline decoration-4 decoration-gray-1000 underline-offset-27' : 'text-blue-1000'}`}>Archived Carts</h1>
                 </div>
-                <div className='flex md:hidden lg:hidden gap-12'>
-                    <button onClick={handleActive} className={`px-4 py-1 bg-slate-100 border-2 ${active ? 'border-yellow-400' : ''}`}>Active (12)</button>
-                    <button onClick={handleArchived} className={`px-4 py-1 bg-slate-100 border-2 ${archived ? 'border-yellow-400' : ''}`}>Archived (2)</button>
+                <div className='flex md:hidden lg:hidden gap-2'>
+                    <button onClick={handleActive} className={`py-2 px-2 bg-slate-100 border-2 ${active ? 'border-yellow-400' : ''}`}>Active (12)</button>
+                    <button onClick={handleArchived} className={`py-2 px-2 bg-slate-100 border-2 ${archived ? 'border-yellow-400' : ''}`}>Archived (2)</button>
                 </div>
                 <div className='flex items-center gap-3'>
                     <img
@@ -66,8 +66,8 @@ const Main = ({ products }) => {
                 </div>
             </div>
             {active ? (
-                <div className='table'>
-                    <Table search={search} products={products}/>
+                <div className=''>
+                    <Table search={search} products={products} />
                 </div>
             ) : (
                 <div style={{ height: "50vh" }} className='archived flex justify-center items-center'>

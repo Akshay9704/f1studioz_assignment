@@ -15,7 +15,7 @@ const OtherOpt = () => {
                         <option>Inside Slide Lock (#2)</option>
                     </Form.Select>
                 </div>
-                <div className='flex flex-col md:flex-row lg:flex-row md:items-center lg:items-center justify-between w-96 mt-4 mx-12 md:mx-40 lg:mx-40'>
+                <div className='flex flex-col md:flex-row lg:flex-row md:items-center lg:items-center justify-between md:w-96 lg:w-96 mt-4 mx-12 md:mx-40 lg:mx-40'>
                     <h3 className='text-gray-1000 mb-2 md:mb-0 lg:mb-0'>MISC Lock Options</h3>
                     <Form>
                         {['radio'].map((type, index) => (
